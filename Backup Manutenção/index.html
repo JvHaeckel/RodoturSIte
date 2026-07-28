@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rodotur Turismo Ltda - Site Em Manutenção</title>
+  
+  <!-- Fonte Google Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --cor-verde-rodotur: #006622;
+      --cor-vermelho-rodotur: #b22222;
+      --cor-verde-claro: #2e8b57;
+      --texto-escuro: #2b2d42;
+      --texto-suave: #6c757d;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--texto-escuro);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* IMAGEM DE FUNDO COM DESFOQUE E MÁSCARA ESCURA */
+    .bg-image {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('background-manutencao.png'); /* Nome da imagem de fundo */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      filter: blur(5px);
+      transform: scale(1.03);
+      z-index: -2;
+    }
+
+    /* SOBREPOSIÇÃO ESCURA PARA CONTRASTE */
+    .bg-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.45);
+      z-index: -1;
+    }
+
+    /* CARD DUAL BLOCK */
+    .container-manutencao {
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(10px);
+      max-width: 850px;
+      width: 100%;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      display: flex;
+      flex-direction: row;
+      z-index: 1;
+    }
+
+    /* PAINEL ESQUERDO - MARCA (VERDE) */
+    .painel-marca {
+      background: linear-gradient(135deg, var(--cor-verde-rodotur) 0%, #004d1a 100%);
+      padding: 3rem 2rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .painel-marca::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background: var(--cor-vermelho-rodotur);
+    }
+
+    .logo-box {
+      background: #ffffff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      max-width: 240px;
+      width: 100%;
+    }
+
+    .logo-box img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* PAINEL DIREITO - MENSAGEM & LINKS */
+    .painel-conteudo {
+      padding: 3rem 2.5rem;
+      flex: 1.2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .tag-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--cor-vermelho-rodotur);
+      background-color: rgba(178, 34, 34, 0.1);
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      margin-bottom: 1rem;
+      width: fit-content;
+    }
+
+    .tag-status .ponto {
+      width: 8px;
+      height: 8px;
+      background-color: var(--cor-vermelho-rodotur);
+      border-radius: 50%;
+    }
+
+    h1 {
+      font-size: 1.65rem;
+      font-weight: 700;
+      color: var(--cor-verde-rodotur);
+      margin-bottom: 0.8rem;
+      line-height: 1.3;
+    }
+
+    p {
+      color: var(--texto-suave);
+      font-size: 0.92rem;
+      line-height: 1.5;
+      margin-bottom: 1.5rem;
+    }
+
+    /* SEÇÃO DE CONTATOS DE ATENDIMENTO */
+    .secao-contato {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .titulo-contato {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--cor-verde-rodotur);
+      margin-bottom: 0.6rem;
+      letter-spacing: 0.5px;
+    }
+
+    .lista-contatos {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .item-contato {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.82rem;
+      color: var(--texto-escuro);
+      text-decoration: none;
+    }
+
+    .item-contato svg {
+      width: 15px;
+      height: 15px;
+      fill: var(--cor-verde-rodotur);
+      flex-shrink: 0;
+    }
+
+    .item-contato a {
+      color: var(--texto-escuro);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    .item-contato a:hover {
+      color: var(--cor-vermelho-rodotur);
+    }
+
+    /* ÁREA DO COLABORADOR (LINK DISCRETO) */
+    .rodape-colaborador {
+      border-top: 1px dashed #cbd5e1;
+      padding-top: 1.2rem;
+    }
+
+    .link-colaborador {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--texto-suave);
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+
+    .link-colaborador svg {
+      width: 16px;
+      height: 16px;
+      fill: var(--texto-suave);
+      transition: fill 0.2s ease;
+    }
+
+    .link-colaborador:hover {
+      color: var(--cor-vermelho-rodotur);
+    }
+
+    .link-colaborador:hover svg {
+      fill: var(--cor-vermelho-rodotur);
+    }
+
+    .copyright-texto {
+      margin-top: 0.8rem;
+      font-size: 0.72rem;
+      color: #94a3b8;
+    }
+
+    /* AJUSTES PARA DISPOSITIVOS MÓVEIS */
+    @media (max-width: 768px) {
+      .container-manutencao {
+        flex-direction: column;
+      }
+
+      .painel-marca {
+        padding: 2.5rem 1.5rem;
+      }
+
+      .painel-conteudo {
+        padding: 2rem 1.5rem;
+      }
+
+      h1 {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- IMAGEM DE FUNDO E MÁSCARA -->
+  <div class="bg-image"></div>
+  <div class="bg-overlay"></div>
+
+  <main class="container-manutencao">
+    <!-- Bloco da Esquerda: Destaque da Marca -->
+    <section class="painel-marca">
+      <div class="logo-box">
+        <img src="logo-rodotur.png" alt="Logotipo Rodotur">
+      </div>
+    </section>
+
+    <!-- Bloco da Direita: Informações e Acesso -->
+    <section class="painel-conteudo">
+      <div class="tag-status">
+        <span class="ponto"></span> Site em Manutenção
+      </div>
+
+      <h1>Estamos atualizando nosso site</h1>
+
+      <p>
+        Para melhor atender aos nossos passageiros e colaboradores, nosso site está passando por atualizações e está temporariamente indisponível. Agradecemos a compreensão.
+      </p>
+
+      <!-- CANAIS DE ATENDIMENTO -->
+      <div class="secao-contato">
+        <div class="titulo-contato">Canais de Atendimento e Suporte:</div>
+        <div class="lista-contatos">
+          <div class="item-contato">
+            <!-- Ícone WhatsApp -->
+            <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+            <span>WhatsApp: <a href="https://wa.me/5581998900043" target="_blank">(81) 99890-0043</a></span>
+          </div>
+
+          <div class="item-contato">
+            <!-- Ícone Email -->
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <span>E-mail: <a href="mailto:sac@rodotur.com.br">sac@rodotur.com.br</a></span>
+          </div>
+
+          <div class="item-contato">
+            <!-- Ícone Telefone SAC -->
+            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            <span>SARC Conorte: <a href="tel:08006060926">0800-6060-926</a></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ÁREA DISCRETA DO COLABORADOR -->
+      <div class="rodape-colaborador">
+        <a href="http://portal.rodotur.com.br:81/portal/login" class="link-colaborador" target="_blank">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+          </svg>
+          Portal do Colaborador (Acesso ao Contracheque)
+        </a>
+        <div class="copyright-texto">
+          &copy; Rodotur Turismo Ltda - Olinda/PE
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
