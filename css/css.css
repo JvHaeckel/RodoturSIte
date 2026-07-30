@@ -18,7 +18,7 @@ body {
 /* ================= HEADER ================= */
 
 .cabecalho {
-    background: #35a7bb;
+    background: #057d92;
     color: white;
     padding: 15px 40px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, .2);
@@ -231,10 +231,70 @@ img {
     max-width: 100%;
 }
 
+
+/* ================= LINHAS ================= */
+
+.cards-linhas{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+    align-items:start;
+}
+
+.card-linha{
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:14px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+    overflow:hidden;
+}
+
+.card-linha:hover{
+    transform:translateY(-4px);
+    box-shadow:0 10px 22px rgba(0,0,0,.15);
+}
+
+.card-linha summary{
+    cursor:pointer;
+    list-style:none;
+    padding:18px 22px;
+    font-size:22px;
+    font-weight:bold;
+    color:#0d4d92;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    user-select:none;
+}
+
+.card-linha summary::-webkit-details-marker{
+    display:none;
+}
+
+.card-linha summary::after{
+    content:"▼";
+    font-size:14px;
+    transition:.3s;
+}
+
+.card-linha[open] summary::after{
+    transform:rotate(180deg);
+}
+
+.card-linha ul{
+    padding:0 30px 20px;
+}
+
+.card-linha li{
+    margin-bottom:10px;
+}
+
+
 /* ================= RODAPÉ ================= */
 
 .rodape {
-    background: #222;
+    background: #8b8787;
     color: white;
     margin-top: 60px;
 }
