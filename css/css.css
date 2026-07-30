@@ -81,7 +81,7 @@ body {
     gap:25px;
 } */
 
-.cards-home{
+.cards-home {
     display: grid;
     grid-template-columns: repeat(2, 380px);
     justify-content: center;
@@ -90,47 +90,47 @@ body {
 
 
 /* =============== RODOFÁCIL =============== */
-.cards-rodofacil{
-    display:flex;
-    gap:25px;
-    margin-top:30px;
-    align-items:stretch;
+.cards-rodofacil {
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+    align-items: stretch;
 }
 
-.cards-rodofacil .card{
-    flex:1;
-    border:1px solid #d9d9d9;
-    border-radius:12px;
-    padding:20px;
-    background:#fff;
-    box-shadow:0 2px 10px rgba(0,0,0,.08);
+.cards-rodofacil .card {
+    flex: 1;
+    border: 1px solid #d9d9d9;
+    border-radius: 12px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .08);
 }
 
-.cards-rodofacil .card-topo{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin-bottom:20px;
+.cards-rodofacil .card-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-.cards-rodofacil .card-topo img{
-    width:55px;
-    height:55px;
-    object-fit:contain;
+.cards-rodofacil .card-topo img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
 }
 
-.cards-rodofacil h2{
-    margin:0;
+.cards-rodofacil h2 {
+    margin: 0;
 }
 
-.cards-rodofacil p{
-    margin:0;
-    line-height:1.6;
+.cards-rodofacil p {
+    margin: 0;
+    line-height: 1.6;
 }
 
 /* =============== CONTEÚDO RODOFÁCIL =============== */
 
-.rodofacil-conteudo{
+.rodofacil-conteudo {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -138,23 +138,23 @@ body {
     margin-bottom: 40px;
 }
 
-.rodofacil-imagem{
+.rodofacil-imagem {
     flex: 0 0 40%;
     text-align: center;
 }
 
-.rodofacil-imagem img{
+.rodofacil-imagem img {
     width: 100%;
     max-width: 420px;
     border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .15);
 }
 
-.rodofacil-texto{
+.rodofacil-texto {
     flex: 1;
 }
 
-.rodofacil-texto p{
+.rodofacil-texto p {
     text-align: justify;
     font-size: 18px;
     line-height: 1.8;
@@ -162,7 +162,7 @@ body {
 
 /* ================= SOBRE ================= */
 
-body.sobre{
+body.sobre {
 
     background: url("../img/fundo-sobre.jpg");
     background-size: cover;
@@ -172,49 +172,49 @@ body.sobre{
 
 }
 
-main.sobre{
+main.sobre {
 
-    background: rgba(255,255,255,.94);
+    background: rgba(255, 255, 255, .94);
     border-radius: 16px;
     padding: 40px;
     margin-top: 40px;
     margin-bottom: 40px;
 
-    box-shadow: 0 8px 25px rgba(0,0,0,.15);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .15);
 
 }
 
-main.sobre h3{
+main.sobre h3 {
 
-    color:#0d4d92;
-    font-size:28px;
+    color: #0d4d92;
+    font-size: 28px;
 
-    margin-top:30px;
-    margin-bottom:15px;
+    margin-top: 30px;
+    margin-bottom: 15px;
 
-    border-left:5px solid #057d92;
-    padding-left:12px;
-
-}
-
-main.sobre h3:first-child{
-
-    margin-top:0;
+    border-left: 5px solid #057d92;
+    padding-left: 12px;
 
 }
 
-main.sobre p{
+main.sobre h3:first-child {
 
-    text-align:justify;
-    line-height:1.8;
-    margin-bottom:18px;
-    font-size:17px;
+    margin-top: 0;
+
+}
+
+main.sobre p {
+
+    text-align: justify;
+    line-height: 1.8;
+    margin-bottom: 18px;
+    font-size: 17px;
 
 }
 
 /* ================= Imagem BackGround ================= */
 
-body.sobre{
+body.sobre {
 
     background-image: url("../img/33anos.jpg");
     background-size: cover;
@@ -222,6 +222,7 @@ body.sobre{
     background-repeat: no-repeat;
 
 }
+
 /* ================= BANNER ================= */
 
 .banner {
@@ -279,75 +280,75 @@ body.sobre{
 
 /* ================= FIELDSET ================= */
 
-fieldset{
+fieldset {
 
-    background:#fff;
-    border:1px solid #ddd;
-    border-radius:14px;
-    padding:15px;
-    min-height:60px;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    padding: 15px;
+    min-height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
-    transition:.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .08);
+    transition: .3s;
 
 }
 
-fieldset:hover{
-    transform:translateY(-4px);
-    box-shadow:0 10px 22px rgba(0,0,0,.15);
+fieldset:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, .15);
 }
 
-fieldset h2{
-    color:#0d4d92;
-    margin-bottom:12px;
+fieldset h2 {
+    color: #0d4d92;
+    margin-bottom: 12px;
 }
 
-fieldset p{
-    margin:10px 0;
-    color:#444;
-    line-height:1.5;
+fieldset p {
+    margin: 10px 0;
+    color: #444;
+    line-height: 1.5;
 }
 
-fieldset img{
-    width:70px;
-    height:auto;
-    transition:.3s;
+fieldset img {
+    width: 70px;
+    height: auto;
+    transition: .3s;
 }
 
-fieldset img:hover{
-    transform:scale(1.08);
+fieldset img:hover {
+    transform: scale(1.08);
 }
 
-fieldset a{
-    color:#0d4d92;
-    text-decoration:none;
+fieldset a {
+    color: #0d4d92;
+    text-decoration: none;
 }
 
-fieldset a:hover{
-    color:#ff9800;
+fieldset a:hover {
+    color: #ff9800;
 }
 
 
 /* ================ Cards Main Home ========*/
 
 /* === Chatbots ======*/
-.card-topo{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin-bottom:10px;
+.card-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
-.card-topo h2{
-    margin:0;
+.card-topo h2 {
+    margin: 0;
 }
 
-.card-topo img{
-    width:60px;
-    height:auto;
+.card-topo img {
+    width: 60px;
+    height: auto;
 }
 
 
@@ -366,60 +367,60 @@ img {
 
 /* ================= LINHAS ================= */
 
-.cards-linhas{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:25px;
-    align-items:start;
+.cards-linhas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    align-items: start;
 }
 
-.card-linha{
-    background:#fff;
-    border:1px solid #ddd;
-    border-radius:14px;
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
-    transition:.3s;
-    overflow:hidden;
+.card-linha {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .08);
+    transition: .3s;
+    overflow: hidden;
 }
 
-.card-linha:hover{
-    transform:translateY(-4px);
-    box-shadow:0 10px 22px rgba(0,0,0,.15);
+.card-linha:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, .15);
 }
 
-.card-linha summary{
-    cursor:pointer;
-    list-style:none;
-    padding:18px 22px;
-    font-size:22px;
-    font-weight:bold;
-    color:#0d4d92;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    user-select:none;
+.card-linha summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 18px 22px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #0d4d92;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
 }
 
-.card-linha summary::-webkit-details-marker{
-    display:none;
+.card-linha summary::-webkit-details-marker {
+    display: none;
 }
 
-.card-linha summary::after{
-    content:"▼";
-    font-size:14px;
-    transition:.3s;
+.card-linha summary::after {
+    content: "▼";
+    font-size: 14px;
+    transition: .3s;
 }
 
-.card-linha[open] summary::after{
-    transform:rotate(180deg);
+.card-linha[open] summary::after {
+    transform: rotate(180deg);
 }
 
-.card-linha ul{
-    padding:0 30px 20px;
+.card-linha ul {
+    padding: 0 30px 20px;
 }
 
-.card-linha li{
-    margin-bottom:10px;
+.card-linha li {
+    margin-bottom: 10px;
 }
 
 
@@ -490,7 +491,10 @@ img {
 
 /* ================= RESPONSIVO ================= */
 
-@media (max-width: 915px) {
+
+/* Tablet */
+
+@media (max-width:914px) {
 
     .cabecalho {
         padding: 10px;
@@ -498,7 +502,7 @@ img {
 
     .topo {
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
         text-align: center;
     }
 
@@ -514,34 +518,69 @@ img {
         gap: 10px;
     }
 
-
     .lista-menu li {
-        width: calc(50% - 10px);
-        max-width: 170px;
+        width: 30%;
+        max-width: 150px;
     }
 
     .lista-menu a {
         display: block;
         background: #0b4380;
-        padding: 12px;
+        padding: 8px;
         border-radius: 8px;
         text-align: center;
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .conteudo-principal {
         width: 95%;
-        margin: 25px auto;
+        margin: 20px auto;
     }
 
-    .cards-home{
+    /* ================= HOME ================= */
 
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:25px;
-    
+    .cards-home fieldset {
+        padding: 12px;
+    }
 
-}
+    .cards-home h2 {
+        font-size: 20px;
+    }
+
+    .cards-home p {
+        font-size: 14px;
+    }
+
+    .cards-home img {
+        width: 55px;
+    }
+
+    /* ================= LINHAS ================= */
+
+    .cards-linhas {
+        grid-template-columns: 1fr;
+    }
+
+    /* ================= SOBRE ================= */
+
+    body.sobre {
+        background-attachment: scroll;
+    }
+
+    main.sobre {
+        padding: 25px;
+    }
+
+    main.sobre h3 {
+        font-size: 22px;
+    }
+
+    main.sobre p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    /* ================= BANNER ================= */
 
     .banner {
         padding: 30px 20px;
@@ -551,68 +590,113 @@ img {
         font-size: 1.7rem;
     }
 
+    /* ================= CONTEÚDO ================= */
+
     .conteudo {
         padding: 25px;
     }
 
-    .rodape-conteudo {
+    /* ================= RODAPÉ ================= */
 
+    .rodape-conteudo {
         display: grid;
         grid-template-columns: 1fr;
         gap: 25px;
-
-    }
-
-    .rodape-info img {
-        width: 110px;
-        height: auto;
-        display: block;
-        margin: 15px auto 0;
+        text-align: center;
     }
 
     .rodape article {
-
         text-align: center;
-
     }
 
     .rodape-links ul {
-
         padding: 0;
         margin: 0;
+    }
 
+    .rodape-info img {
+        width: 120px;
+        margin: 15px auto 0;
     }
 
 }
 
-/* =============== RODOFÁCIL =============== */
+/* ================= CELULARES ================= */
 
-@media (max-width: 768px) {
 
-    .rodofacil-conteudo {
-        flex-direction: column;
+    @media (max-width:814px) {
+
+         /* ================= HOME CELULAR ================= */
+
+        .cards-home {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .cards-home fieldset {
+            padding: 15px;
+        }
+
+        .cards-home h2 {
+            font-size: 20px;
+        }
+
+        .cards-home p {
+            font-size: 14px;
+        }
+
+        /* ================= RODOFÁCIL ================= */
+
+        .rodofacil-conteudo {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 25px;
+        }
+
+        .rodofacil-imagem {
+            width: 100%;
+        }
+
+        .rodofacil-imagem img {
+            width: 100%;
+            max-width: 320px;
+        }
+
+        .rodofacil-texto {
+            width: 100%;
+        }
+
+        .rodofacil-texto p {
+            text-align: justify;
+            font-size: 16px;
+        }
+
+        .cards-rodofacil {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .cards-rodofacil .card {
+            width: 100%;
+        }
+
+        /* ================= GERAL ================= */
+
+        fieldset {
+            padding: 20px;
+        }
+
+        .card-topo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .card-topo img {
+            width: 55px;
+        }
+
     }
-
-    .rodofacil-imagem img {
-        width: 100%;
-        max-width: 400px;
-    }
-    .rodofacil-conteudo{
-    flex-direction: column;
-    text-align: center;
-}
-
-.rodofacil-imagem{
-    width: 100%;
-}
-
-.rodofacil-imagem img{
-    max-width: 320px;
-}
-
-.rodofacil-texto p{
-    text-align: justify;
-}
-
-}
-
