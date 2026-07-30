@@ -75,11 +75,20 @@ body {
 
 /* ================= HOME ================= */
 
-.cards-home{
+/* .cards-home{
     display:grid;
     grid-template-columns:repeat(2,1fr);
     gap:25px;
+} */
+
+.cards-home{
+    display: grid;
+    grid-template-columns: repeat(2, 380px);
+    justify-content: center;
+    gap: 25px;
 }
+
+
 
 /* ================= BANNER ================= */
 
@@ -143,8 +152,8 @@ fieldset{
     background:#fff;
     border:1px solid #ddd;
     border-radius:14px;
-    padding:10px;
-    min-height:80px;
+    padding:15px;
+    min-height:60px;
     display:flex;
     flex-direction:column;
     justify-content:space-between;
@@ -197,7 +206,7 @@ fieldset a:hover{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    margin-bottom:15px;
+    margin-bottom:10px;
 }
 
 .card-topo h2{
@@ -338,6 +347,7 @@ img {
     display:grid;
     grid-template-columns:repeat(2,1fr);
     gap:25px;
+    
 
 }
 
