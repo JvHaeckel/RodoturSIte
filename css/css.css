@@ -492,7 +492,7 @@ img {
 /* ================= RESPONSIVO ================= */
 
 
-/* Tablet */
+                   /* Tablet */
 
 @media (max-width:914px) {
 
@@ -596,28 +596,59 @@ img {
         padding: 25px;
     }
 
-    /* ================= RODAPÉ ================= */
+   /* ================= RODAPÉ ================= */
 
-    .rodape-conteudo {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 25px;
-        text-align: center;
-    }
+.rodape-conteudo{
 
-    .rodape article {
-        text-align: center;
-    }
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    align-items:start;
+    text-align:left;
 
-    .rodape-links ul {
-        padding: 0;
-        margin: 0;
-    }
+}
 
-    .rodape-info img {
-        width: 120px;
-        margin: 15px auto 0;
-    }
+.rodape article{
+
+    text-align:left;
+
+}
+
+.rodape h3{
+
+    font-size:16px;
+    margin-bottom:8px;
+
+}
+
+.rodape p,
+.rodape li,
+.rodape a{
+
+    font-size:12px;
+    line-height:1.2;
+
+}
+
+.rodape-links ul{
+
+    padding:0;
+    margin:0;
+
+}
+
+.rodape-info{
+
+    grid-column:1 / 3;
+    text-align:center;
+    margin-top:10px;
+
+}
+
+.rodape-info img{
+
+    width:80px;
+    margin:auto;
 
 }
 
