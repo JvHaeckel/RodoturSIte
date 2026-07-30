@@ -162,8 +162,6 @@ body {
 
 /* ================= SOBRE ================= */
 
-/* ================= SOBRE ================= */
-
 body.sobre{
 
     background: url("../img/fundo-sobre.jpg");
@@ -214,6 +212,16 @@ main.sobre p{
 
 }
 
+/* ================= Imagem BackGround ================= */
+
+body.sobre{
+
+    background-image: url("../img/33anos.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
 /* ================= BANNER ================= */
 
 .banner {
