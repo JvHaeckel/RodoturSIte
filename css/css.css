@@ -160,7 +160,59 @@ body {
     line-height: 1.8;
 }
 
+/* ================= SOBRE ================= */
 
+/* ================= SOBRE ================= */
+
+body.sobre{
+
+    background: url("../img/fundo-sobre.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+main.sobre{
+
+    background: rgba(255,255,255,.94);
+    border-radius: 16px;
+    padding: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,.15);
+
+}
+
+main.sobre h3{
+
+    color:#0d4d92;
+    font-size:28px;
+
+    margin-top:30px;
+    margin-bottom:15px;
+
+    border-left:5px solid #057d92;
+    padding-left:12px;
+
+}
+
+main.sobre h3:first-child{
+
+    margin-top:0;
+
+}
+
+main.sobre p{
+
+    text-align:justify;
+    line-height:1.8;
+    margin-bottom:18px;
+    font-size:17px;
+
+}
 
 /* ================= BANNER ================= */
 
