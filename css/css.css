@@ -89,6 +89,78 @@ body {
 }
 
 
+/* =============== RODOFÁCIL =============== */
+.cards-rodofacil{
+    display:flex;
+    gap:25px;
+    margin-top:30px;
+    align-items:stretch;
+}
+
+.cards-rodofacil .card{
+    flex:1;
+    border:1px solid #d9d9d9;
+    border-radius:12px;
+    padding:20px;
+    background:#fff;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.cards-rodofacil .card-topo{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.cards-rodofacil .card-topo img{
+    width:55px;
+    height:55px;
+    object-fit:contain;
+}
+
+.cards-rodofacil h2{
+    margin:0;
+}
+
+.cards-rodofacil p{
+    margin:0;
+    line-height:1.6;
+}
+
+/* =============== CONTEÚDO RODOFÁCIL =============== */
+
+.rodofacil-conteudo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.rodofacil-imagem{
+    flex: 0 0 40%;
+    text-align: center;
+}
+
+.rodofacil-imagem img{
+    width: 100%;
+    max-width: 420px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+}
+
+.rodofacil-texto{
+    flex: 1;
+}
+
+.rodofacil-texto p{
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
 
 /* ================= BANNER ================= */
 
@@ -452,3 +524,35 @@ img {
     }
 
 }
+
+/* =============== RODOFÁCIL =============== */
+
+@media (max-width: 768px) {
+
+    .rodofacil-conteudo {
+        flex-direction: column;
+    }
+
+    .rodofacil-imagem img {
+        width: 100%;
+        max-width: 400px;
+    }
+    .rodofacil-conteudo{
+    flex-direction: column;
+    text-align: center;
+}
+
+.rodofacil-imagem{
+    width: 100%;
+}
+
+.rodofacil-imagem img{
+    max-width: 320px;
+}
+
+.rodofacil-texto p{
+    text-align: justify;
+}
+
+}
+
