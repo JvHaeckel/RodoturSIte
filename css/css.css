@@ -474,6 +474,46 @@ img {
 }
 
 
+
+/* ================= TABELA DE HORÁRIOS ================= */
+
+.tabela-horarios{
+    width:100%;
+    max-width:700px;
+    margin:25px auto 0;
+    border-collapse:collapse;
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.tabela-horarios thead{
+    background:#057d92;
+}
+
+.tabela-horarios th{
+    color:#fff;
+    padding:15px;
+    font-size:20px;
+    text-align:center;
+}
+
+.tabela-horarios td{
+    padding:12px;
+    text-align:center;
+    font-size:18px;
+    border-bottom:1px solid #ececec;
+}
+
+.tabela-horarios tbody tr:nth-child(even){
+    background:#f5f8fa;
+}
+
+.tabela-horarios tbody tr:hover{
+    background:#e8f5f8;
+}
+
 /* ================= RODAPÉ ================= */
 
 .rodape {
