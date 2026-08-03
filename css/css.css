@@ -332,6 +332,56 @@ fieldset a:hover {
 }
 
 
+/* ================= Páginas Instituconais ======= */
+/* ================= PÁGINAS INSTITUCIONAIS ================= */
+
+.pagina-institucional{
+
+    background:#fff;
+    border-radius:16px;
+    padding:40px;
+    margin:40px auto;
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
+
+}
+
+.pagina-institucional h3{
+
+    color:#0d4d92;
+    font-size:28px;
+    margin:30px 0 15px;
+    padding-left:12px;
+    border-left:5px solid #057d92;
+
+}
+
+.pagina-institucional h3:first-child{
+
+    margin-top:0;
+
+}
+
+.pagina-institucional p{
+
+    text-align:justify;
+    line-height:1.8;
+    font-size:17px;
+    margin-bottom:18px;
+
+}
+
+.pagina-institucional ul{
+
+    margin:15px 0 25px 25px;
+
+}
+
+.pagina-institucional li{
+
+    margin-bottom:10px;
+
+}
+
 /* ================ Cards Main Home ========*/
 
 /* === Chatbots ======*/
