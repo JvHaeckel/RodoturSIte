@@ -148,6 +148,21 @@ body {
 }
 
 
+/* ================= HOME Imagem de fundo ================= */
+
+body.home{
+
+    background:
+        linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
+        url("../img/Bus\ 3eixosFrente.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+}
+
 /* ================= RODOFÁCIL ================= */
 
 .rodofacil-conteudo{
