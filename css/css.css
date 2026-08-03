@@ -47,7 +47,7 @@ body {
     display: flex;
     align-items: center;
     list-style: none;
-    gap: 30px;
+    gap: 25px;
 }
 
 .lista-menu li {
@@ -434,7 +434,7 @@ img {
 
 .rodape-conteudo {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     gap: 40px;
     max-width: 1200px;
@@ -447,7 +447,7 @@ img {
 }
 
 .rodape h3 {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .rodape p {
@@ -477,7 +477,7 @@ img {
 }
 
 .rodape-info img {
-    width: 180px;
+    width: 160px;
     height: auto;
 }
 
@@ -492,7 +492,7 @@ img {
 /* ================= RESPONSIVO ================= */
 
 
-                   /* Tablet */
+/* Tablet */
 
 @media (max-width:914px) {
 
@@ -596,68 +596,68 @@ img {
         padding: 25px;
     }
 
-   /* ================= RODAPÉ ================= */
+    /* ================= RODAPÉ ================= */
 
-.rodape-conteudo{
+    .rodape-conteudo {
 
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:20px;
-    align-items:start;
-    text-align:left;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        align-items: start;
+        text-align: left;
 
-}
+    }
 
-.rodape article{
+    .rodape article {
 
-    text-align:left;
+        text-align: left;
 
-}
+    }
 
-.rodape h3{
+    .rodape h3 {
 
-    font-size:16px;
-    margin-bottom:8px;
+        font-size: 16px;
+        margin-bottom: 8px;
 
-}
+    }
 
-.rodape p,
-.rodape li,
-.rodape a{
+    .rodape p,
+    .rodape li,
+    .rodape a {
 
-    font-size:12px;
-    line-height:1.2;
+        font-size: 12px;
+        line-height: 1.2;
 
-}
+    }
 
-.rodape-links ul{
+    .rodape-links ul {
 
-    padding:0;
-    margin:0;
+        padding: 0;
+        margin: 0;
 
-}
+    }
 
-.rodape-info{
+    .rodape-info {
 
-    grid-column:1 / 3;
-    text-align:center;
-    margin-top:10px;
+        grid-column: 1 / 3;
+        text-align: center;
+        margin-top: 10px;
 
-}
+    }
 
-.rodape-info img{
+    .rodape-info img {
 
-    width:80px;
-    margin:auto;
+        width: 80px;
+        margin: auto;
 
-}
+    }
 
-/* ================= CELULARES ================= */
+    /* ================= CELULARES ================= */
 
 
     @media (max-width:814px) {
 
-         /* ================= HOME CELULAR ================= */
+        /* ================= HOME CELULAR ================= */
 
         .cards-home {
             grid-template-columns: repeat(2, 1fr);
@@ -729,5 +729,5 @@ img {
         .card-topo img {
             width: 55px;
         }
-
     }
+}
