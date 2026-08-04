@@ -167,47 +167,53 @@ body.home{
 
 .rodofacil-conteudo{
     display:flex;
-    align-items:center;
     gap:40px;
-    margin-bottom:40px;
+    align-items:flex-start;
+}
+
+.rodofacil-esquerda{
+    width:38%;
+    display:flex;
+    flex-direction:column;
+    gap:25px;
 }
 
 .rodofacil-imagem{
-    flex:0 0 40%;
-    text-align:center;
+    margin:0;
 }
 
 .rodofacil-imagem img{
     width:100%;
-    max-width:420px;
+    display:block;
     border-radius:15px;
     box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.cards-rodofacil{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
 }
 
 .rodofacil-texto{
     flex:1;
 }
 
-.rodofacil-texto p{
+.rodofacil-texto article{
     text-align:justify;
-    line-height:1.8;
+}
+
+.rodofacil-texto p{
     margin-bottom:18px;
+    line-height:1.8;
 }
 
 .rodofacil-texto ul{
-    margin-left:25px;
+    margin:15px 0 20px 20px;
 }
 
-/* Cards */
-
-.cards-rodofacil{
-    display:flex;
-    gap:25px;
-    margin-top:30px;
-}
-
-.cards-rodofacil fieldset{
-    flex:1;
+.rodofacil-texto li{
+    margin-bottom:10px;
 }
 
 /* ================= SOBRE ================= */
