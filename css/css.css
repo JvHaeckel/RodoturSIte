@@ -793,16 +793,10 @@ img {
 
 /* ================= MAPA Rodapé ================= */
 
-.mapa-google{
-
-    width:100%;
-    height:220px;
-
+.mapa-google iframe{
+    width:90%;
     border:0;
     border-radius:12px;
-
-    margin-top:15px;
-
 }
 
 
